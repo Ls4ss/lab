@@ -771,6 +771,28 @@ body:not(.post-template) .post-title {
     color: #9EABB3;
 }
 
+.profile-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+   background: linear-gradient(135deg, #ff4444, #a30000);
+   color: #ffffff;
+   text-decoration: none;
+   border-radius: 8px;
+   font-weight: bold;
+   transition: background 0.2s, transform 0.2s;
+}
+
+.profile-button:hover {
+   background: linear-gradient(135deg, #a30000, #ff4444);
+   transform: translateY(-5px);
+}
+
+.profile-button {
+   margin-bottom: 15px;
+   padding: 8px 16px;
+}
+
 .author-thumb {
     width: 24px;
     height: 24px;
@@ -1772,7 +1794,6 @@ body:not(.post-template) .post-title {
                 transform: translateY(-5px) rotate(-90deg);
     }
 }
-
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
