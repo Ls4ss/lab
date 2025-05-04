@@ -22,7 +22,7 @@ Ao testar APIs GraphQL, verifique estes endpoints:
 **Dica:**  
 Use ferramentas como **Burp Suite**, **curl** ou **Postman** para enviar consultas de teste a esses endpoints. Um simples `POST` com `{"query":"{__typename}"}` pode confirmar se um endpoint está ativo.
 
-```bash
+```
 curl -X POST -H "Content-Type: application/json" -d '{"query":"{__typename}"}' http://alvo/graphql
 ```
 
@@ -33,7 +33,7 @@ O **introspection** permite que clientes consultem o **schema** de uma API Graph
 
 ### Verificação Básica de Introspecção
 
-```json
+```
 {
   "query": "{__schema{queryType{name}}}"
 }
@@ -44,7 +44,7 @@ Uma resposta bem-sucedida confirma que a introspecção está habilitada.
 
 Use esta consulta detalhada para obter o schema completo:
 
-```bash
+```
 query IntrospectionQuery {
   __schema {
     queryType { name }
@@ -115,7 +115,7 @@ fragment TypeRef on __Type {
 Ao enfrentar introspecção desabilitada ou proteções de WAF, experimente estas técnicas:
 ### 1. Manipulação de Espaços em Branco
 
-```json
+```
 {
   "query": "query{__schema
   {queryType{name}}}"
@@ -127,14 +127,14 @@ O GraphQL ignora espaços em branco, permitindo quebrar proteções baseadas em 
 
 Teste requisições GET com consultas codificadas em URL:
 
-```http
+```
 GET /graphql?query=query%7B__schema%0A%7BqueryType%7Bname%7D%7D%7D
 ```
 ### 3. Poluição de Parâmetros
 
 Teste nomes alternativos de parâmetros:
 
-```http
+```
 POST /api
 Content-Type: application/json
 
