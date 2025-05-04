@@ -4,11 +4,7 @@ title:  "Descobrindo e explorando endpoints GraphQL"
 date:   2025-04-05 13:30:00
 cover: /lab/assets/images/posts/lucassouza.io_graphql_attacks.png
 categories: PENTEST
----
-
-# Descobrindo e explorando endpoints GraphQL
-
-# 
+--- 
 
 GraphQL tornou-se uma alternativa popular às APIs REST devido à sua flexibilidade e eficiência. Neste guia técnico, exploraremos endpoints comuns, técnicas de introspecção e métodos para contornar controles de segurança.
 
