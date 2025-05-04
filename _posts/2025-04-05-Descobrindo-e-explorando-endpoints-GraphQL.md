@@ -44,7 +44,7 @@ Uma resposta bem-sucedida confirma que a introspecção está habilitada.
 
 Use esta consulta detalhada para obter o schema completo:
 
-```json
+```bash
 query IntrospectionQuery {
   __schema {
     queryType { name }
