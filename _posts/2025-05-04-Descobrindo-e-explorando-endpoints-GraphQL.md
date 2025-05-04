@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Descobrindo e explorando endpoints GraphQL"
-date:   2025-04-05 13:30:00
+date:   2025-05-04 13:30:00
 cover: /lab/assets/images/posts/lucassouza.io_graphql_attacks.png
 categories: PENTEST
 --- 
